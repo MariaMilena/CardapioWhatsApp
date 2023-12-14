@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante - Seja bem-vindo!</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
 </head>
 <body>
     <div class="container-mensagens" id="container-mensagens"></div>
@@ -19,7 +21,7 @@
     
     <section class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg pl-0 pr-0"> <!-- pl/padding left pr/padding right  -->
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one"> <!-- pl/padding left pr/padding right  -->
                 <a href="#" class="navbar-brand wow fadeIn">
                     <img src="./img/logo.png" alt="" class="img-logo" width="160">
                 </a>
@@ -57,7 +59,7 @@
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one">
                     <div class="d-flex text-banner">
                         <h1 class="wow fadeInLeft"><b>Escolha sua comida <b class="color-primary">favorita.</b></b></h1>
                         <p class="wow fadeInLeft delay-02s">Aproveite nosso cardápio! Escolha o que desejar e recebe em sua casa de forma rápida e segura.</p>
@@ -83,7 +85,7 @@
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 no-mobile">
                     <div class="card-banner wow fadeIn delay-02s"></div>
                     <div class="d-flex img-banner wow fadeIn delay-05s">
                         <img src="./img/burguer.png"/>
@@ -105,7 +107,7 @@
         <div class="background-servicos"></div>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5 wow fadeIn">
+                <div class="col-12 col-one text-center mb-5 wow fadeIn">
                     <span class="hint-title">
                         <b>Serviços</b>
                     </span>
@@ -113,7 +115,7 @@
                         <b>Como são nossos serviços?</b>
                     </h1>
                 </div>
-                <div class="col-4 mb-5 wow fadeInUp">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one mb-5 wow fadeInUp">
                     <div class="card-icon text-center">
                         <img src="./img/icone-pedido.svg" width="150px" />
                     </div>
@@ -122,7 +124,7 @@
                         <span>Você só precisa de alguns passos para pedir sua comida.</span>
                     </div>
                 </div>
-                <div class="col-4 mb-5 wow fadeInUp">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one mb-5 wow fadeInUp">
                     <div class="card-icon text-center">
                         <img src="./img/icone-delivery.svg" width="250px" />
                     </div>
@@ -131,7 +133,7 @@
                         <span>Nossa entrega é sempre pontual, rápida e segura.</span>
                     </div>
                 </div>
-                <div class="col-4 mb-5 wow fadeInUp">
+                <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-one mb-5 wow fadeInUp">
                     <div class="card-icon text-center">
                         <img src="./img/icone-qualidade.svg" width="250px" />
                     </div>
@@ -148,7 +150,7 @@
         <div class="background-cardapio"></div>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5 wow fadeIn">
+                <div class="col-12 col-one text-center mb-5 wow fadeIn">
                     <span class="hint-title">
                         <b>Cardápio</b>
                     </span>
@@ -157,7 +159,7 @@
                     </h1>
                 </div>
 
-                <div class="col-12 container-menu wow fadeInUp">
+                <div class="col-12 col-one container-menu wow fadeInUp">
                     <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
                         <i class="fas fa-hamburger"></i>
                         &nbsp; Burgers
@@ -184,13 +186,13 @@
                     </a>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 col-one">
                     <div class="row" id="itensCardapio">
                         
                     </div>
                 </div>
 
-                <div class="col-12 text-center wow fadeInUp">
+                <div class="col-12 col-one text-center wow fadeInUp">
                     <a id="btnVerMais" class="btn btn-white btn-sm" onclick="cardapio.metodos.verMais()">Ver mais</a>
                 </div>
             </div>
@@ -201,13 +203,13 @@
         <div class="background-depoimentos"></div>
         <div class="container">
             <div class="row">
-                <div class="col-5 text-center">
+                <div class="col-5 no-mobile text-center">
                     <div class="card-depoimentos wow fadeIn"></div>
                     <div class="d-flex img-banner wow fadeInLeft delay-02s">
                         <img src="./img/pizzas.png">
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-lg-7 col-md-7 col-sm-12 col-one">
                     <span class="hint-title wow fadeIn">
                         <b>Depoimentos</b>
                     </span>
@@ -299,10 +301,10 @@
     <section class="reserva" id="reserva">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-one">
                     <div class="card-secondary wow fadeInUp">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-12 col-lg-7 col-md-7 col-sm-12">
                                 <span class="hint-title">
                                     <b>Reservas</b>
                                 </span>
@@ -318,7 +320,7 @@
                                     Fazer reserva
                                 </a>
                             </div>
-                            <div class="col-5">
+                            <div class="col-5 no-mobile">
                                 <div class="card-reserva"></div>
                                 <div class="d-flex img-banner">
                                     <img src="./img/icone-reserva.svg">
@@ -334,15 +336,15 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-3 container-logo-footer wow fadeIn">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-logo-footer wow fadeIn">
                     <img src="./img/logo.png" class="logo-footer">
                 </div>
-                <div class="col-6 container-texto-footer wow fadeIn">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one container-texto-footer wow fadeIn">
                     <p class="mb-0">
                         <b>Menu On-line</b>&copy; Todos os direitos reservados
                     </p>
                 </div>
-                <div class="col-3 container-redes-footer wow fadeIn">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-redes-footer wow fadeIn">
                     <a class="btn btn-sm btn-white btn-social mr-3">
                         <i class="fab fa-instagram"></i>
                     </a>
@@ -373,12 +375,11 @@
         </div>
         <div class="m-body">
             <div class="container">
-                <div id="itensCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
-                    
+                <div id="itensCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">         
                 </div>
 
                 <div id="localEntrega" class="row mr-0 ml-0 animated fadeIn hidden">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
                         <div class="form-group container-cep">
                             <label>CEP</label>
                             <input id="txtCEP" type="text" class="form-control"/>
@@ -387,21 +388,21 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-8"></div>
+                    <div class="col-8 no-mobile"></div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                         <div class="form-group">
                             <label>Endereço</label>
                             <input id="txtEndereco" type="text" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
                         <div class="form-group">
                             <label>Bairro</label>
                             <input id="txtBairro" type="text" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-2 col-sm-12">
                         <div class="form-group">
                             <label>Número
                             </label>
@@ -409,19 +410,19 @@
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                         <div class="form-group">
                             <label>Cidade</label>
                             <input id="txtCidade" type="text" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12">
                         <div class="form-group">
                             <label>Complemento</label>
                             <input id="txtComplemento" type="text" class="form-control"/>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-lg-2 col-md-2 col-sm-12">
                         <div class="form-group">
                             <label>UF</label>
                             <select class="form-control" id="ddlUf">
